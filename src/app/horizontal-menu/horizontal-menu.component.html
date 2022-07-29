@@ -1,0 +1,105 @@
+<div class="header navbar-light bg-light">
+  <div class="image">
+    <div>
+      <img
+        class="mr-4"
+        [routerLink]="['/context']"
+        src="../../assets/img/logo.png"
+      />
+      <img
+        class="mr-5"
+        class="logo"
+        src="../../assets/img/Final Logo w Text.png"
+        [routerLink]="['/context']"
+      />
+    </div>
+    <div>
+      <img class="mr-4" src="../../assets/img/EN V Co-funded by_PANTONE.png" />
+      <app-language-selector></app-language-selector>
+    </div>
+  </div>
+</div>
+
+<nav class="center nav navbar navbar-expand-lg navbar-light bg-light">
+  <div class="center collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="center navbar-nav mr-auto">
+      <li class="nav-item active">
+        <!-- <a class="nav-link" routerLink="/about"
+          >//{{ words[0].about | translate }}
+        </a> -->
+        <a class="nav-link" routerLink="/about"> {{ "About" | translate }} </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/staff">
+          {{ "hor-STAFF" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/news"> {{ "hor-NEWS" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          {{ "hor-RESERCH EU" | translate }}
+        </a>
+
+        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div> -->
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <a
+            class="dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            {{ "hor-TEACH EU" | translate }}
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li>
+              <a class="dropdown-item" [routerLink]="['/video']" href="#">
+                {{ "hor-eupoltrans course" | translate }}
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" [routerLink]="['/video']" href="#">
+                {{ "hor-mooc" | translate }}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/discuss-eu">
+          {{ "hor-DISCUSS EU" | translate }}
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/blog" href="#">
+          {{ "hor-BLOG" | translate }}</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" routerLink="/contact">
+          {{ "hor-CONTACT" | translate }}</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
